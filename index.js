@@ -7,5 +7,6 @@ const record = [
 
 superbowlWin = (record) => {
     let result = record.find( function(s) { return s.result === "W" })
+    // Ternary operator
     return !!result ? result.year : undefined
 }
